@@ -73,11 +73,40 @@ int arith(int a, int b, int flag) {
     }
     return result;
 }
+void sizeOfInt() {
+    int size = 0;
+    while (-1 <  size) {
+        printf("The Value of size: %d\n", size << 1);
+        size++;
+    }
+}
+void geradeZahlen(){
+
+    int userInput;
+    printf("Zahl eingeben: ");
+    scanf("%d", &userInput);
+    if(userInput <0)
+    {
+        for (int i = 0; i >= userInput; i--)
+        {
+            printf("The even numbers from 0 to %d: %d\n",userInput,i);
+            i--;
+        }
+    }
+    else
+    {
+        for (int i = 0; i <= userInput; i++)
+        {
+            printf("The even numbers from 0 to %d: %d\n",userInput,i);
+            i++;
+        }
+    }
+}
 
 int main() {
     printf("Hello, World!\n");
 
-    int a,b,c,d;
+ /*   int a,b,c,d;
     a = 1;
     b=2;
     c=3;
@@ -90,7 +119,9 @@ int main() {
     for (int i = 1; i <= 6; ++i) {
         ret = arith(6,3,i);
         printf("Result value is : %d\n", ret);
-    }
+    }*/
+    //sizeOfInt();
+    geradeZahlen();
     return 0;
 }
 
