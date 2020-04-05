@@ -138,6 +138,15 @@ void sortSourceCode() {
     goto PART5;
     END:;
 }
+int fibonacci(int x){
+    if(x == 0){
+        return 0;
+    }
+    if(x == 1){
+        return 1;
+    }
+    return fibonacci(x-1) + fibonacci(x-2);
+}
 int main() {
     printf("Hello, World!\n");
 
@@ -158,7 +167,13 @@ int main() {
     //sizeOfInt();
     //geradeZahlen();
     //simulateLoopWithGOTO();
-    sortSourceCode();
+    //sortSourceCode();
+    int userInput;
+    scanf("%d", &userInput);
+    printf("%d\n",fibonacci(userInput));
+    printf("%d\n",fibonacci(0));
+    printf("%d\n",fibonacci(3));
+    printf("%d\n",fibonacci(12));
     return 0;
 }
 
