@@ -76,9 +76,9 @@ int arith(int a, int b, int flag) {
 void sizeOfInt() {
     int size = 0;
     while (-1 <  size) {
-        printf("The Value of size: %d\n", size << 1);
         size++;
     }
+    printf("The Value of size: %d\n", --size);
 }
 void geradeZahlen(){
 
@@ -146,34 +146,5 @@ int fibonacci(int x){
         return 1;
     }
     return fibonacci(x-1) + fibonacci(x-2);
-}
-int main() {
-    printf("Hello, World!\n");
-
- /*   int a,b,c,d;
-    a = 1;
-    b=2;
-    c=3;
-    d=4;
-    int ret;
-    ret = min(a,b,c,d);
-    printf("Max value is : %d\n", ret);
-    ret = max(a,b,c,d);
-    printf("Min value is : %d\n", ret);
-    for (int i = 1; i <= 6; ++i) {
-        ret = arith(6,3,i);
-        printf("Result value is : %d\n", ret);
-    }*/
-    //sizeOfInt();
-    //geradeZahlen();
-    //simulateLoopWithGOTO();
-    //sortSourceCode();
-    int userInput;
-    scanf("%d", &userInput);
-    printf("%d\n",fibonacci(userInput));
-    printf("%d\n",fibonacci(0));
-    printf("%d\n",fibonacci(3));
-    printf("%d\n",fibonacci(12));
-    return 0;
 }
 
