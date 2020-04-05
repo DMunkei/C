@@ -48,6 +48,31 @@ int max(int a, int b, int c, int d)
 
     return result;
 }
+int arith(int a, int b, int flag) {
+    int result;
+    switch (flag){
+        case 1:
+            result = a+b;
+            break;
+        case 2:
+            result = a-b;
+            break;
+        case 3:
+            result = a*b;
+            break;
+        case 4:
+            result = a/b;
+            break;
+        case 5:
+            result = a;
+            break;
+        default:
+            printf("Sie haben einen ungueltigen Flag uebergeben!");
+            result = -1;
+            break;
+    }
+    return result;
+}
 
 int main() {
     printf("Hello, World!\n");
@@ -62,6 +87,10 @@ int main() {
     printf("Max value is : %d\n", ret);
     ret = max(a,b,c,d);
     printf("Min value is : %d\n", ret);
+    for (int i = 1; i <= 6; ++i) {
+        ret = arith(6,3,i);
+        printf("Result value is : %d\n", ret);
+    }
     return 0;
 }
 
