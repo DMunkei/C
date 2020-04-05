@@ -116,6 +116,28 @@ void simulateLoopWithGOTO(){
     }
     BREAK:;
 }
+void sortSourceCode() {
+
+    goto PART1;
+    PART3:;
+    printf("der ");
+    goto PART4;
+    PART2:;
+    printf("bei ");
+    goto PART3;
+    PART1:;
+    printf("Willkommen ");
+    goto PART2;
+    PART5:;
+    printf("Uebungseinheit ");
+    goto END;
+    PART4:;
+    printf("vorletzten ");
+    printf("Aufgabe ");
+    printf("dieser ");
+    goto PART5;
+    END:;
+}
 int main() {
     printf("Hello, World!\n");
 
@@ -135,7 +157,8 @@ int main() {
     }*/
     //sizeOfInt();
     //geradeZahlen();
-    simulateLoopWithGOTO();
+    //simulateLoopWithGOTO();
+    sortSourceCode();
     return 0;
 }
 
