@@ -102,7 +102,20 @@ void geradeZahlen(){
         }
     }
 }
-
+void simulateLoopWithGOTO(){
+    for (int i = 0; i < 10; ++i) {
+        if(i == 2){
+            goto CONTINUE;
+        } else{
+            printf("%d\n", i);
+        }
+        CONTINUE:;
+        if(i == 5){
+            goto BREAK;
+        }
+    }
+    BREAK:;
+}
 int main() {
     printf("Hello, World!\n");
 
@@ -121,7 +134,8 @@ int main() {
         printf("Result value is : %d\n", ret);
     }*/
     //sizeOfInt();
-    geradeZahlen();
+    //geradeZahlen();
+    simulateLoopWithGOTO();
     return 0;
 }
 
