@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "UA1.h"
 int min(int a, int b, int c, int d)
 {
     int result,min1,min2;
